@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather Companion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌥️ Weather App</h1>
+
+    <div class="input-group">
+      <input type="text" id="cityInput" placeholder="Enter city..." />
+      <button onclick="getWeatherByCity()">🔍</button>
+      <button onclick="getWeatherByLocation()">📍</button>
+      <button id="themeToggle">🌙</button>
+    </div>
+
+    <p id="clock"></p>
+
+    <div id="weatherInfo" class="hidden"></div>
+
+    <h3 id="forecastTitle" class="hidden">📅 5-Day Forecast</h3>
+    <div id="forecast" class="forecast hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
